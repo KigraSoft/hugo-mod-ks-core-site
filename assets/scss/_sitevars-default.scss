@@ -1,0 +1,79 @@
+// Kigra Core Site SASS Base Config
+//
+// Version 0.3 - 2024-07
+//
+// _sitevars-default.scss
+//
+// Part of standard set of SASS base config being used across the
+// Kigra Enterprise websites.
+//
+// Setup site specific variables that will be used by _base.scss and
+// other boilerplate code.
+//
+// Contains the full set of site variables that are needed by the rest of the scss files.
+// Intended to be overridden by _sitevars.scss by each site where desired.
+//
+//@import 'utils';
+//@import 'logo';
+
+$site-main-bg-clr: #222;
+
+// setup font defaults
+
+$font-stack-serif-default: Times, "Times New Roman", Georgia, serif;
+$font-stack-sans-default:  Verdana, Arial, Helvetica, sans-serif;
+$font-stack-mono-default:  "Lucida Console", Courier, monospace;
+
+$font-base-font-stack: $font-stack-serif-default;
+
+$font-color: #0a0;
+$font-base-txt-color: #0a0;
+$font-base-txt-size: 100%;
+
+// ALL ENTRIES BELOW UNREVIEWED DURING CORE SITE DEVEL
+
+$site-shdr-bg-clr: #ffebcd;
+$site-mhdr-bg-clr: #f5deb3;
+$site-mhdr-bd-clr: #deb887;
+
+$font-stack-serif: Times, "Times New Roman", Georgia, serif;
+$font-stack-sans: Verdana, Arial, Helvetica, sans-serif;
+$font-stack-mono: "Lucida Console", Courier, monospace;
+
+$font-stack-logo: $font-stack-mono;
+$font-txt-font-stack: $font-stack-mono;
+
+$font-color: #0a0;
+$font-txt-color: #0a0;
+$font-txt-size: 100%;
+
+$font-hdg-color: #0aa;
+
+$sz-min: 4px;
+$sz-max: 8px;
+$vw-min: 500px;
+$vw-max: 1200px;
+$bdr-width: 0.2ch;
+
+$main-width: 70ch;
+
+$site-main-width-min: 350px;
+$site-main-width-tgt: 80svw;
+$site-main-width-max: 1200px;
+$site-main-padding:   2vw;
+
+$site-hdg-width-min: 350px;
+$site-hdg-width-tgt: 90svw;
+$site-hdg-width-max: 1200px;
+$site-hdg-padding:   2vw;
+
+$hdg-1-font-size: 2.0rem;
+$hdg-2-font-size: 1.5rem;
+$hdg-3-font-size: 1.2rem;
+$hdg-4-font-size: 1.1rem;
+$hdg-5-font-size: 1.1rem;
+$hdg-6-font-size: 1.1rem;
+
+$hdg-e-font-color: #0aa;
+$hdg-o-font-color: #ff5;
+

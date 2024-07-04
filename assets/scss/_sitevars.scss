@@ -1,0 +1,67 @@
+// Kigra Core Site SASS Base Config
+//
+// Version 0.3 - 2024-07
+//
+// _sitevars.scss
+//
+// Part of standard set of SASS base config being used across the
+// Kigra Enterprise websites.
+//
+// Setup site specific variables that will be used by _base.scss and
+// other boilerplate code.
+//
+// Template file for overrideing sitevars-default.
+// Designed to placed each sites assets folder and customized for each site.
+//
+//@import 'utils';
+//@import 'logo';
+
+// ALL ENTRIES BELOW UNREVIEWED DURING CORE SITE DEVEL
+
+$site-main-bg-clr: #222;
+
+$site-shdr-bg-clr: #ffebcd;
+$site-mhdr-bg-clr: #f5deb3;
+$site-mhdr-bd-clr: #deb887;
+
+$font-stack-serif: Times, "Times New Roman", Georgia, serif;
+$font-stack-sans: Verdana, Arial, Helvetica, sans-serif;
+$font-stack-mono: "Lucida Console", Courier, monospace;
+
+$font-stack-logo: $font-stack-mono;
+$font-txt-font-stack: $font-stack-mono;
+
+$font-color: #0a0;
+$font-txt-color: #0a0;
+$font-txt-size: 100%;
+
+$font-hdg-color: #0aa;
+
+$sz-min: 4px;
+$sz-max: 8px;
+$vw-min: 500px;
+$vw-max: 1200px;
+$bdr-width: 0.2ch;
+
+$main-width: 70ch;
+
+$site-main-width-min: 350px;
+$site-main-width-tgt: 80svw;
+$site-main-width-max: 1200px;
+$site-main-padding:   2vw;
+
+$site-hdg-width-min: 350px;
+$site-hdg-width-tgt: 90svw;
+$site-hdg-width-max: 1200px;
+$site-hdg-padding:   2vw;
+
+$hdg-1-font-size: 2.0rem;
+$hdg-2-font-size: 1.5rem;
+$hdg-3-font-size: 1.2rem;
+$hdg-4-font-size: 1.1rem;
+$hdg-5-font-size: 1.1rem;
+$hdg-6-font-size: 1.1rem;
+
+$hdg-e-font-color: #0aa;
+$hdg-o-font-color: #ff5;
+

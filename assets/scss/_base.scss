@@ -1,0 +1,84 @@
+// Kigra Core Site SASS Base Config
+//
+// Version 0.3 - 2024-07
+//
+// _base.scss
+//
+// Part of standard set of SASS base config being used across the
+// Kigra Enterprise websites.
+//
+//
+@import 'reset';
+// import site specific variables for color, font, etc.
+@import 'sitevars-default';
+@import 'sitevars';
+@import 'utils';
+
+// Setup basic page config
+html {
+    background: $site-main-bg-clr;
+    font-size:  $font-base-txt-size;
+    color:      $font-base-txt-color;
+}
+
+p, a {
+        text-decoration: none;
+        font-family:     $font-base-font-stack;
+    }
+
+//
+// Code for a responsive site menu
+nav {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+.menu-btn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+        order: 1;
+        margin-right: 20px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background-color: green;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+    nav ul li {
+        margin: 20px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #menu:checked ~ ul {
+        right: 0;
+    }
+}

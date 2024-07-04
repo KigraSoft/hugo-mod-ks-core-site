@@ -1,0 +1,11 @@
+<header>
+  {{ .Site.Title }}
+</header>
+<input class="menu" type="checkbox" id="menu" />
+<label class="menu-btn" for="menu"><span class="menu-btn-icon"></span></label>
+<nav>
+  <ul>
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+</nav>
