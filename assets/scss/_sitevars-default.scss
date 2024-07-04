@@ -16,7 +16,25 @@
 //@import 'utils';
 //@import 'logo';
 
-$site-main-bg-clr: #222;
+// COLORS FOR EACH SECTION AND ELEMENT
+//
+// Background colors
+$site-site-bkg-color: $site-default-bkg-color;
+$site-hdr--bkg-color: $site-default-bkg-color;
+$site-main-bkg-color: $site-default-bkg-color;
+$site-ftr--bkg-color: $site-default-bkg-color;
+
+// Font colors
+$site-site-txt-color: $site-default-txt-color;
+$site-hdr--txt-color: $site-default-txt-color;
+$site-main-txt-color: $site-default-txt-color;
+$site-ftr--txt-color: $site-default-txt-color;
+
+// Font Defaults
+$site-site-txt-font: $site-default-txt-font;
+$site-hdr--txt-font: $site-default-txt-font;
+$site-main-txt-font: $site-default-txt-font;
+$site-ftr--txt-font: $site-default-txt-font;
 
 // setup font defaults
 

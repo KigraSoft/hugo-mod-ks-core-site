@@ -10,13 +10,14 @@
 //
 @import 'reset';
 // import site specific variables for color, font, etc.
+@import 'site-defaults';
 @import 'sitevars-default';
 @import 'sitevars';
 @import 'utils';
 
 // Setup basic page config
 html {
-    background: $site-main-bg-clr;
+    background: $site-site-bkg-color;
     font-size:  $font-base-txt-size;
     color:      $font-base-txt-color;
 }
@@ -42,9 +43,10 @@ header {
 
     #site-logo {
         flex: 1 0 auto;
+        text-align: center;
     }
-
 }
+@import 'menu';
 
 main {
 
@@ -56,14 +58,46 @@ main {
         max-width: clamp($site-main-width-min, $site-main-width-tgt, $site-main-width-max);
         padding:   $site-main-padding;
         margin:    auto;
-        flex: 0 0;
+        flex: 3 0;
     }
     
     aside {
-        flex: 0 0 300px;
+        //flex: 0 0 300px;
+        flex: 1 0;
     }
 }
 
 
-@import 'menu';
+// sections color & font
+
+body {
+    background:  $site-site-bkg-color;
+    color:       $site-site-txt-color;
+    font-family: $site-site-txt-font;
+
+    header {
+        background:  $site-hdr--bkg-color;
+        color:       $site-hdr--txt-color;
+        font-family: $site-hdr--txt-font;
+
+        nav {
+            background:  $site-hdr--bkg-color;
+            color:       $site-hdr--txt-color;
+            font-family: $site-hdr--txt-font;
+        }
+    }
+
+    main {
+        background:  $site-main-bkg-color;
+        color:       $site-main-txt-color;
+        font-family: $site-main-txt-font;
+    }
+
+    footer {
+        background:  $site-ftr--bkg-color;
+        color:       $site-ftr--txt-color;
+        font-family: $site-ftr--txt-font;
+    }
+}
+
 

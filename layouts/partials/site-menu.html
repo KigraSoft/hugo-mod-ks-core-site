@@ -1,0 +1,10 @@
+<nav>
+  <input class="menu" type="checkbox" id="menu-id" />
+  <label class="menu-btn" for="menu-id">
+    <span class="menu-btn-icon">&#x2261</span>
+  </label>
+  <ul>
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+</nav>

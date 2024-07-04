@@ -1,7 +1,4 @@
 {{- define "main" }}
-  <header>
-    <p>Homepage Logo & header</p>
-  </header>
   <article>
     {{ with (index (where site.RegularPages "Type" "posts").ByDate.Reverse 0) }}
     <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>

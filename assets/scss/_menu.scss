@@ -1,0 +1,86 @@
+// Kigra Core Site SASS Base Config
+//
+// Version 0.3 - 2024-07
+//
+// _menu.scss
+//
+// Part of standard set of SASS base config being used across the
+// Kigra Enterprise websites.
+//
+// Code for a responsive site menu
+
+nav {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex: 0 0 auto;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            a:hover {
+                color: lightgreen;
+            }
+        }
+    }
+}
+
+.menu-btn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#menu-id {
+    display: none;
+}
+
+@include query(tablet) {
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background-color: green;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+
+        ul li {
+            margin: 20px 0;
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .menu-btn {
+        display: block;
+        order: 1;
+        margin-right: 20px;
+    }
+
+    #menu-id:checked ~ ul {
+        right: 0;
+    }
+}
