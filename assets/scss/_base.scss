@@ -26,80 +26,44 @@ p, a {
         font-family:     $font-base-font-stack;
     }
 
-//
-// Code for a responsive site menu
-
 body {
-    margin: 0;
-    padding: 0;
+    width:       100%;
+    min-height:  100vh;
+    font-size:   1.0rem;
+    line-height: 1.5;
+    margin:      0;
+    padding:     0;
+}
+header {
+
+    display:         flex;
+    flex-direction:  row;
+    flex-wrap:       nowrap;
+
+    #site-logo {
+        flex: 1 0 auto;
+    }
+
 }
 
-nav {
-    background-color: green;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+main {
 
-    ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    display:         flex;
+    flex-direction:  row-reverse;
+    flex-wrap:       wrap;
 
-        li {
-            margin-right: 20px;
-
-            a {
-                color: white;
-                text-decoration: none;
-                transition: color 0.3s;
-            }
-
-            a:hover {
-                color: lightgreen;
-            }
-        }
+    article {
+        max-width: clamp($site-main-width-min, $site-main-width-tgt, $site-main-width-max);
+        padding:   $site-main-padding;
+        margin:    auto;
+        flex: 0 0;
+    }
+    
+    aside {
+        flex: 0 0 300px;
     }
 }
 
-.menu-btn {
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    display: none;
-}
-#menu-id {
-    display: none;
-}
-@media (max-width: 768px) {
-    .menu-btn {
-        display: block;
-        order: 1;
-        margin-right: 20px;
-    }
 
-    nav ul {
-        position: fixed;
-        top: 80px;
-        right: -100%;
-        background-color: green;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.3s;
-    }
-    nav ul li {
-        margin: 20px 0;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    #menu-id:checked ~ ul {
-        right: 0;
-    }
-}
+@import 'menu';
+

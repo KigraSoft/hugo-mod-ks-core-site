@@ -1,6 +1,6 @@
 <aside>
   <ul>
-    {{ range first 2 (after 1 (.Site.RegularPages.ByDate.Reverse)) }}
+    {{ range first 5 (after 1 (.Site.RegularPages.ByDate.Reverse)) }}
     <li>
       <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
       <time datetime="{{ .PublishDate }}">{{ .PublishDate }}</time>

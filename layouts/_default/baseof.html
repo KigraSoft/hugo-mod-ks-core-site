@@ -2,9 +2,14 @@
 <html lang="en">
   {{ partial "head.html" . }}
   <body>
-    {{- partial "site-header.html" . }}
-    {{- block "main" . }}{{ end }}
-    {{- partial "site-aside.html" . }}
+    <header>
+      {{- partial "site-header.html" . }}
+      {{- partial "site-menu.html" . }}
+    </header>
+    <main>
+      {{- block "main" . }}{{ end }}
+      {{- partial "site-aside.html" . }}
+    </main>
     {{- partial "site-footer.html" . }}
   </body>
 </html>
