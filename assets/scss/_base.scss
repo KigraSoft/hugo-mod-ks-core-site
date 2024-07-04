@@ -28,6 +28,12 @@ p, a {
 
 //
 // Code for a responsive site menu
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     background-color: green;
     color: white;
@@ -41,15 +47,30 @@ nav {
         list-style: none;
         padding: 0;
         margin: 0;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            a:hover {
+                color: lightgreen;
+            }
+        }
     }
 }
+
 .menu-btn {
     font-size: 30px;
     color: white;
     cursor: pointer;
     display: none;
 }
-.menu {
+#menu-id {
     display: none;
 }
 @media (max-width: 768px) {
@@ -78,7 +99,7 @@ nav {
     nav ul li a {
         font-size: 20px;
     }
-    #menu:checked ~ ul {
+    #menu-id:checked ~ ul {
         right: 0;
     }
 }
