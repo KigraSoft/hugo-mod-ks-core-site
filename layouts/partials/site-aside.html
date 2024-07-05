@@ -8,6 +8,11 @@
         <time datetime="{{ .PublishDate }}">
           {{- .PublishDate.Format .Site.Params.dateFormat -}}
         </time>
+        {{- with .Params.categories }}
+        {{- range . -}}
+        <p class="category">{{ . }}</p>
+        {{- end -}}
+        {{- end -}}
       </li>
       {{- end -}}
     </ul>
