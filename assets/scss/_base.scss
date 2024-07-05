@@ -34,6 +34,8 @@ body {
     line-height: 1.5;
     margin:      0;
     padding:     0;
+    display:     grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -67,6 +69,9 @@ main {
         //flex: 0 0 300px;
         flex:      1 0;
     }
+}
+
+footer {
 }
 
 
