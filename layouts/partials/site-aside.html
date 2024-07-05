@@ -5,9 +5,7 @@
       {{ range first 5 (.Site.RegularPages.ByDate.Reverse) }}
       <li>
         <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
-        <time datetime="{{ .PublishDate }}">
-          {{- .PublishDate.Format .Site.Params.dateFormat -}}
-        </time>
+        {{- partial "site-time.html" . }}
         {{- with .Params.categories }}
         {{- range . -}}
         <p class="category">{{ . }}</p>

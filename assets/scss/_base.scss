@@ -56,16 +56,16 @@ main {
     flex-direction:  row-reverse;
     flex-wrap:       wrap;
 
-    article {
+    article, section {
         max-width: clamp($site-main-width-min, $site-main-width-tgt, $site-main-width-max);
         padding:   $site-main-padding;
         margin:    auto;
-        flex: 3 0;
+        flex:      3 0;
     }
     
     aside {
         //flex: 0 0 300px;
-        flex: 1 0;
+        flex:      1 0;
     }
 }
 
