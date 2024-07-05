@@ -35,6 +35,7 @@ body {
     margin:      0;
     padding:     0;
 }
+
 header {
 
     display:         flex;
@@ -46,6 +47,7 @@ header {
         text-align: center;
     }
 }
+
 @import 'menu';
 
 main {
@@ -91,6 +93,18 @@ body {
         background:  $site-main-bkg-color;
         color:       $site-main-txt-color;
         font-family: $site-main-txt-font;
+
+        article {
+            background:  $site-artl-bkg-color;
+            color:       $site-artl-txt-color;
+            font-family: $site-artl-txt-font;
+        }
+
+        aside {
+            background:  $site-asde-bkg-color;
+            color:       $site-asde-txt-color;
+            font-family: $site-asde-txt-font;
+        }
     }
 
     footer {
@@ -101,3 +115,17 @@ body {
 }
 
 
+aside {
+    ul {
+        li {
+            time {
+                display: table;
+            }
+        }
+    }
+}
+
+code {
+    font-family: Palatino, Georgia, serif;
+    font-size:   1.5em;
+}

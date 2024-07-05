@@ -1,10 +1,15 @@
 <aside>
-  <ul>
-    {{ range first 5 (after 1 (.Site.RegularPages.ByDate.Reverse)) }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
-      <time datetime="{{ .PublishDate }}">{{ .PublishDate }}</time>
-    </li>
-    {{- end -}}
-  </ul>
+  <section id="recent-posts">
+    <p>Recent Additions</p>
+    <ul>
+      {{ range first 5 (.Site.RegularPages.ByDate.Reverse) }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
+        <time datetime="{{ .PublishDate }}">
+          {{- .PublishDate.Format .Site.Params.dateFormat -}}
+        </time>
+      </li>
+      {{- end -}}
+    </ul>
+  </section>
 </aside>
