@@ -1,0 +1,60 @@
+// sections color & font
+
+body {
+    background:  $site-site-bkg-color;
+    color:       $site-site-txt-color;
+    font-family: $site-site-txt-font;
+
+    header {
+        background:  $site-hdr--bkg-color;
+        color:       $site-hdr--txt-color;
+        font-family: $site-hdr--txt-font;
+
+        #site-logo {
+
+            #site-title {
+                font-style:   normal;
+                font-weight:  800;
+                font-size:    1.8rem;
+                font-variant: small-caps;
+            }
+
+            #site-subtitle {
+                font-style:  italic;
+                font-weight: 600;
+                font-size:   1.0rem;;
+            }
+        }
+        
+        nav {
+            background:  $site-hdr--bkg-color;
+            color:       $site-hdr--txt-color;
+            font-family: $site-hdr--txt-font;
+        }
+    }
+
+    main {
+        background:  $site-main-bkg-color;
+        color:       $site-main-txt-color;
+        font-family: $site-main-txt-font;
+
+        article {
+            background:  $site-artl-bkg-color;
+            color:       $site-artl-txt-color;
+            font-family: $site-artl-txt-font;
+        }
+
+        aside {
+            background:  $site-asde-bkg-color;
+            color:       $site-asde-txt-color;
+            font-family: $site-asde-txt-font;
+        }
+    }
+
+    footer {
+        background:  $site-ftr--bkg-color;
+        color:       $site-ftr--txt-color;
+        font-family: $site-ftr--txt-font;
+    }
+}
+

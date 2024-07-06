@@ -57,6 +57,7 @@ main {
     display:         flex;
     flex-direction:  row-reverse;
     flex-wrap:       wrap;
+    align-content:   flex-start;
 
     article, section {
         max-width: clamp($site-main-width-min, $site-main-width-tgt, $site-main-width-max);
@@ -74,51 +75,7 @@ main {
 footer {
 }
 
-
-// sections color & font
-
-body {
-    background:  $site-site-bkg-color;
-    color:       $site-site-txt-color;
-    font-family: $site-site-txt-font;
-
-    header {
-        background:  $site-hdr--bkg-color;
-        color:       $site-hdr--txt-color;
-        font-family: $site-hdr--txt-font;
-
-        nav {
-            background:  $site-hdr--bkg-color;
-            color:       $site-hdr--txt-color;
-            font-family: $site-hdr--txt-font;
-        }
-    }
-
-    main {
-        background:  $site-main-bkg-color;
-        color:       $site-main-txt-color;
-        font-family: $site-main-txt-font;
-
-        article {
-            background:  $site-artl-bkg-color;
-            color:       $site-artl-txt-color;
-            font-family: $site-artl-txt-font;
-        }
-
-        aside {
-            background:  $site-asde-bkg-color;
-            color:       $site-asde-txt-color;
-            font-family: $site-asde-txt-font;
-        }
-    }
-
-    footer {
-        background:  $site-ftr--bkg-color;
-        color:       $site-ftr--txt-color;
-        font-family: $site-ftr--txt-font;
-    }
-}
-
+@import 'colors-n-fonts';
 
 aside {
     ul {
