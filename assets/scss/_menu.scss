@@ -10,13 +10,16 @@
 // Code for a responsive site menu
 
 nav {
-    background-color: green;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    background:  $site-hdr--bkg-color;
+    color:       $site-hdr--txt-color;
+    font-family: $site-hdr--txt-font;
+
     flex: 0 0 auto;
+
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    padding:         10px 20px;
 
     ul {
         display: flex;
@@ -28,13 +31,13 @@ nav {
             margin-right: 20px;
 
             a {
-                color: white;
+                color: $site-hdr--txt-color;
                 text-decoration: none;
                 transition: color 0.3s;
             }
 
             a:hover {
-                color: lightgreen;
+                color: $site-hdr--txt-color;
             }
         }
     }
@@ -42,7 +45,7 @@ nav {
 
 .menu-btn {
     font-size: 30px;
-    color: white;
+    color: $site-hdr--txt-color;
     cursor: pointer;
     display: none;
 }
@@ -56,12 +59,12 @@ nav {
         position: fixed;
         top: 80px;
         right: -100%;
-        background-color: green;
+        background-color: $site-hdr--bkg-color;
         width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         transition: all 0.3s;
 
