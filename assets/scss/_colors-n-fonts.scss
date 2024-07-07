@@ -42,12 +42,52 @@ body {
             background:  $site-artl-bkg-color;
             color:       $site-artl-txt-color;
             font-family: $site-artl-txt-font;
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 900;
+                text-align: center;
+            }
+            h2 {
+                font-size:  1.0rem;
+                font-weight: bold;
+                text-align: left;
+                margin:     1lh auto 0;
+            }
+            h3 {
+                font-size: 1.0rem;
+                font-style: italic;
+                margin:     1lh auto 0;
+            }
+            h4 {
+                font-size: 1.0rem;
+                font-weight: bold;
+                text-decoration: underline;
+                text-indent: 5ch;
+                margin:      0.5lh auto 0;
+            }
         }
 
         aside {
             background:  $site-asde-bkg-color;
             color:       $site-asde-txt-color;
             font-family: $site-asde-txt-font;
+
+            section {
+
+                p {
+                    font-weight: bold;
+                    font-style: italic;
+                }
+                
+                ul li {
+                    p, time {
+                        font-weight: normal;
+                        font-style: italic;
+                        text-indent: 2ch;
+                    }
+                }
+            }
         }
     }
 

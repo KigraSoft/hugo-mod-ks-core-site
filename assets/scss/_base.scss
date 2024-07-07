@@ -18,23 +18,23 @@
 // Setup basic page config
 html {
     background: $site-site-bkg-color;
-    font-size:  $font-base-txt-size;
-    color:      $font-base-txt-color;
+    color:      $site-site-txt-color;
+    font-size:  100%;
 }
 
 p, a {
-        text-decoration: none;
-        font-family:     $font-base-font-stack;
-    }
+    text-decoration: none;
+    font-family:     $site-site-txt-font;
+}
 
 body {
     width:       100%;
     min-height:  100vh;
     font-size:   1.0rem;
-    line-height: 1.5;
     margin:      0;
     padding:     0;
-    display:     grid;
+    
+    display:            grid;
     grid-template-rows: auto 1fr auto;
 }
 
@@ -43,6 +43,7 @@ header {
     display:         flex;
     flex-direction:  row;
     flex-wrap:       nowrap;
+    border: thin solid;
 
     #site-logo {
         flex: 1 0 auto;
@@ -59,16 +60,38 @@ main {
     flex-wrap:       wrap;
     align-content:   flex-start;
 
-    article, section {
-        max-width: clamp($site-main-width-min, $site-main-width-tgt, $site-main-width-max);
+    article {
+        min-width: clamp(50vw, 700px, 100vw);
+        max-width: 90ch;
         padding:   $site-main-padding;
         margin:    auto;
         flex:      3 0;
+
+        p {
+            text-indent: 5ch;
+            line-height: 2.0;
+        }
     }
     
     aside {
-        //flex: 0 0 300px;
+        max-width: 40ch;
         flex:      1 0;
+        border-right: thin solid;
+
+        section ul li {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin:    0.5lh 0 0;
+
+            a {
+                width: 100%;
+            }
+
+            p, time {
+                width: 50%;
+            }
+        }
     }
 }
 
