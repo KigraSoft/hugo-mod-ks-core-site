@@ -1,6 +1,6 @@
 <aside>
-  <section id="recent-posts">
-    <p>Recent Additions</p>
+  <section>
+    <h2 id="recent-posts">Recent Additions</h2>
     <ul>
       {{ range first 5 (.Site.RegularPages.ByDate.Reverse) }}
       <li>
@@ -13,6 +13,16 @@
         {{- end -}}
       </li>
       {{- end -}}
+    </ul>
+  </section>
+  <section>
+    <h2 id="tags">Tags</h2>
+    <ul>
+      {{ range .Site.Taxonomies.tags.ByCount }}
+      <li>
+        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}
+      </li>
+      {{ end }}
     </ul>
   </section>
 </aside>
