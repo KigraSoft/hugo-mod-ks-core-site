@@ -79,30 +79,37 @@ main {
     aside {
         max-width: 40ch;
         flex:      1 0;
-        border-left: thin solid #ddd;
+        border: thin solid #ddd;
 
-        h2 {
-            border:    thin solid #ddd;
-            background:     #f4f4f4;
-        }
+        section {
 
-        section ul li {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin:    0.5lh 0 0;
-
-            a {
-                width: 100%;
+            h2 {
+                border:     thin solid #ddd;
+                background: #f4f4f4;
+                font-size:  1.0rem;
+                font-style: italic;
+                padding: 0.5vw 1vw;
             }
 
-            p {
-                width: 50%;
-                text-align: right;
-            }
-            time {
-                width: 50%;
-                text-align: left;
+            ul li {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin:    0.5lh 0 0;
+                padding: 0vw 1vw;
+
+                a {
+                    width: 100%;
+                }
+                
+                p {
+                    width: 50%;
+                    text-align: right;
+                }
+                time {
+                    width: 50%;
+                    text-align: left;
+                }
             }
         }
     }
