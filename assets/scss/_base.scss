@@ -66,18 +66,20 @@ main {
         min-width: clamp(50vw, 700px, 100vw);
         max-width: 90ch;
         padding:   $site-main-padding;
-        margin:    1vw auto;
-        flex:      3 0;
+        margin:    1vw auto 8vh;
+        flex:      4 0;
 //        border:    thin solid #ddd;
 
         p {
+            margin: 0 5vw;
             text-indent: 5ch;
             line-height: 2.0;
         }
     }
     
     aside {
-        max-width: 40ch;
+        max-width: clamp(300px, 55ch, 400px);
+        min-width: 30ch;
         flex:      1 0;
         border: thin solid #ddd;
 
