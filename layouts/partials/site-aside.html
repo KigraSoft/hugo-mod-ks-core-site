@@ -17,12 +17,10 @@
   </section>
   <section>
     <h2 id="tags">Tags</h2>
-    <ul>
+    <p>
       {{ range .Site.Taxonomies.tags.ByCount }}
-      <li>
-        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}
-      </li>
+        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }}) - 
       {{ end }}
-    </ul>
+    </p>
   </section>
 </aside>
