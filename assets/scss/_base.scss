@@ -41,9 +41,9 @@ body {
 header {
 
     display:         flex;
-    flex-direction:  row;
+    flex-direction:  column;
     flex-wrap:       nowrap;
-    border: thin solid;
+    border:          thin solid;
 
     #site-logo {
         flex: 1 0 auto;
