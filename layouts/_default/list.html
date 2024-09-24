@@ -1,13 +1,16 @@
 {{- define "main" }}
 <article>
   <h1>{{ .Title }}</h1>
-  {{ range .Pages.ByPublishDate.Reverse }}
-  <p>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{- partial "site-time.html" . }}
-    {{- partial "site-category.html" . }}
-    {{- partial "site-tags.html" . }}
-  </p>
-  {{ end }}
+  <ul>
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <li>
+      <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+      {{- partial "site-time.html" . }}
+      {{- partial "site-category.html" . }}
+      {{- partial "site-tags.html" . }}
+      <p class="summary">{{ .Summary | plainify | strings.Truncate 100 | }}</p>
+    </li>
+    {{ end }}
+  </ul>
 </article>
 {{- end -}}

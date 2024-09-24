@@ -19,8 +19,9 @@
     <h2 id="tags">Tags</h2>
     <p>
       {{ range .Site.Taxonomies.tags.ByCount }}
-        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }}) - 
+      - <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>&nbsp;({{ .Count }})
       {{ end }}
+      -
     </p>
   </section>
 </aside>
